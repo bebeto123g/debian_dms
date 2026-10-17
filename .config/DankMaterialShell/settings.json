@@ -10,12 +10,14 @@
   "keyboardOptions": "grp:caps_toggle",
   "firstDayOfWeek": 1,
   "clockFormat": "24h",
+  "blurWallpaperOnOverview": true,
   "systemTrayIconTintMode": "monochrome",
   "controlCenterShowMicPercent": true,
   "showWorkspaceIndex": true,
   "appIdSubstitutions": [],
   "clockDateFormat": "ddd d MMM yyyy",
   "weatherEnabled": false,
+  "networkPreference": "wifi",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -32,6 +34,10 @@
       "cursorHideTimeout": 0
     }
   },
+  "notepadUseMonospace": false,
+  "notepadFontSize": 15,
+  "notepadShowLineNumbers": true,
+  "notepadEdgeGap": 4,
   "osdPowerProfileEnabled": true,
   "barConfigs": [
     {
@@ -61,32 +67,60 @@
           "enabled": true,
           "minimumWidth": true
         },
-        "focusedWindow",
         {
-          "id": "music",
+          "id": "focusedWindow",
           "enabled": true,
-          "mediaSize": 0
+          "focusedWindowCompactMode": true,
+          "focusedWindowSize": 0,
+          "focusedWindowShowIcon": true
         }
       ],
-      "centerWidgets": [],
-      "rightWidgets": [
-        "workspaceSwitcher",
-        "systemTray",
-        {
-          "id": "keyboard_layout_name",
-          "enabled": true,
-          "keyboardLayoutNameCompactMode": true
-        },
-        "clipboard",
-        "notificationButton",
-        "battery",
+      "centerWidgets": [
         {
           "id": "clock",
           "enabled": true,
           "clockDateOrder": "timeFirst",
           "clockCompactMode": false
         },
-        "controlCenterButton",
+        "notificationButton",
+        "clipboard",
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 1
+        }
+      ],
+      "rightWidgets": [
+        "workspaceSwitcher",
+        "systemTray",
+        {
+          "id": "keyboard_layout_name",
+          "enabled": true,
+          "keyboardLayoutNameCompactMode": true,
+          "keyboardLayoutNameShowIcon": false
+        },
+        {
+          "id": "battery",
+          "enabled": true,
+          "showBatteryPercentOnlyOnBattery": false,
+          "showBatteryTime": false,
+          "showBatteryPowerCharging": false,
+          "showBatteryPowerDischarging": false,
+          "batteryStyle": "icon",
+          "showBatteryTimeOnlyOnBattery": false
+        },
+        {
+          "id": "controlCenterButton",
+          "enabled": true,
+          "showAudioPercent": true,
+          "showMicIcon": true,
+          "showBrightnessIcon": true,
+          "showBrightnessPercent": true,
+          "showBatteryIcon": false,
+          "showPrinterIcon": false,
+          "showScreenSharingIcon": false,
+          "showIdleInhibitorIcon": false
+        },
         {
           "id": "powerMenuButton",
           "enabled": true
