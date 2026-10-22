@@ -268,5 +268,8 @@
     }
   ],
   "scrollbarsEnabled": true,
-  "blurBorderEnabled": false
+  "blurBorderEnabled": false,
+  "dmsWindowsFloatingSeeded": [
+    "niri"
+  ]
 }
