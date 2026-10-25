@@ -5,13 +5,13 @@ background-opacity = 0.9
 background-blur-radius = 20
 
 # Отступы по горизонтали (слева и справа)
-window-padding-x = 8
+window-padding-x = 2
 
 # Отступы по вертикали (сверху и снизу)
-window-padding-y = 8
+window-padding-y = 2
 
 # Размер шрифта
-font-size = 15
+font-size = 14
 
 # Семейство шрифтов
 font-family = "Hasklug Nerd Fonts"
