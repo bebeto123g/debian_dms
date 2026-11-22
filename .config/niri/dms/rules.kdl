@@ -20,7 +20,7 @@ window-rule {
     match app-id="firefox"
     match app-id="zen"
     match app-id="obsidian"
-    match app-id="code-oss"
+    match app-id="com.microsoft.VSCode"
     match app-id="mpv"
     match app-id="helium"
     match app-id="kitty"
@@ -31,6 +31,7 @@ window-rule {
 
 window-rule {
     match app-id="firefox$" title="^Picture-in-Picture$"
+    match app-id="zen$" title="^Picture-in-Picture$"
     open-floating true
     default-column-width { fixed 480; }
     default-window-height { fixed 270; }

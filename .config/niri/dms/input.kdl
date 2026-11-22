@@ -19,8 +19,4 @@ input {
             options "grp:caps_toggle"
         }
     }
-
-    // Включает автофокус при наведении курсора на окно
-    focus-follows-mouse
 }
-
